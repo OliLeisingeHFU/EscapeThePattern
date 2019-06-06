@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b77ee4b474dad91448d82d397441a141
+=======
+guid: bf3bd7c27a10e2447a25d9a0ae8e6ea9
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,7 +12,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Schrank_Holz
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 77016b917ee2f0042ac1b1945c449426, type: 2}
+=======
+    second: {fileID: 2100000, guid: 35adee5ab79207f49b8d45732130fcf4, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0

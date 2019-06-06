@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1d3f3d16a31ae274e8ba7dc0f469faa2
+=======
+guid: a17ab59deb8a39242a9def8f3d3cb3f0
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,17 +12,29 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bett_Decke_Kissen
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 72a7e70142187174082c142c8ed6d3dc, type: 2}
+=======
+    second: {fileID: 2100000, guid: 4cacbbf7c1e636041a9f7b4df2640602, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bett_Holz
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 361a30774f3803d40832aad3f5c46ab8, type: 2}
+=======
+    second: {fileID: 2100000, guid: 7ec32865c713c6d498809f2014915461, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bett_Matratze
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 11619dad9ba27c248aefbf18954de986, type: 2}
+=======
+    second: {fileID: 2100000, guid: 65555de696e96cc45a5571adb0592d78, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0

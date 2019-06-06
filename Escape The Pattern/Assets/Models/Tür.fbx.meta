@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a443deba80a9436449e56c52d5cdae2f
+=======
+guid: d0b2b7de3b844af478db70cf71f5c297
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,12 +12,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "T\xFCr_Holz"
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 1a046b242d6b2ff42aa68c1ec2f43146, type: 2}
+=======
+    second: {fileID: 2100000, guid: 8f70ce6a33cdf9a478c82061811607e3, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "T\xFCrklinke"
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 2d6fcdf260db7c8429b935fe13cbd28d, type: 2}
+=======
+    second: {fileID: 2100000, guid: 2a25aa209cc3f504c9069433d6edd78a, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0

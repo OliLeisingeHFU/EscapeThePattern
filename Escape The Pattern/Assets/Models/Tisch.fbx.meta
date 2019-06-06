@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 62007dbac7bf4ee4fbde2aafa8a280c5
+=======
+guid: b9e739414e0263e45ab6cfab0812c561
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,12 +12,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Braun(Tischplatte)
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 4838d02f98f051b4aaca462216aa55e4, type: 2}
+=======
+    second: {fileID: 2100000, guid: 56e46ca4363e241449da3b2b78f30385, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tischbeine
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 7af30bd5a0fd09e4489b33615563c92e, type: 2}
+=======
+    second: {fileID: 2100000, guid: 12ffd6d350ee18240b80ed8fcf13e2fe, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0

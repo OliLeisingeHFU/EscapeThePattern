@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 109395591e7ac7a49aa4f3b22c742a94
+=======
+guid: 285a563235eca324f8665e86fa005aa7
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,12 +12,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Schrank_Halterung
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 2b43e810954eed943ad119be6a9d7ddc, type: 2}
+=======
+    second: {fileID: 2100000, guid: 6d1929512478cd14db42372f0357d1ff, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Schrank_Holz
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 10cb1ea135ad72f47bb3fb310cb8da50, type: 2}
+=======
+    second: {fileID: 2100000, guid: 35adee5ab79207f49b8d45732130fcf4, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0

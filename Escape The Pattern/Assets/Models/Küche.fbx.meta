@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9b0390ca7ec0f6441a9e3c0cb7509bde
+=======
+guid: 24a0e9abd20740647b24dca135006cf1
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,27 +12,48 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "Arbeitsfl\xE4che"
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: c7204f6c4af34f94ca507642213c082e, type: 2}
+=======
+    second: {fileID: 2100000, guid: a732ceb77ac1aa5478698972a74d41bb, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Herd
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: b7fd323f0cbd35040b7f3c983eed3a50, type: 2}
+=======
+    second: {fileID: 2100000, guid: 8400fb6badeed3f48abbd740892bba5a, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "K\xFCchenschrank"
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: a6f71810f186f1340ac08c43cab96331, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "Sp\xFClbecken"
     second: {fileID: 2100000, guid: 52d9388681288044e868489a116dc64f, type: 2}
+=======
+    second: {fileID: 2100000, guid: a78a5ec939fce4a45a379360623611d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Waschbecken
+    second: {fileID: 2100000, guid: e0d576292162cf140bd704ddb194fc3b, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wasserhahn
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 1a45fca57baed5740b5548e82f0f69e4, type: 2}
+=======
+    second: {fileID: 2100000, guid: 7111f74181b44594a95b9d143aafe617, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0

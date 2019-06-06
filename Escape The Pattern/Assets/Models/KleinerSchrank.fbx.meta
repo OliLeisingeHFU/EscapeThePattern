@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 225fad87ff72daa4e9e5ddfa2f8e238b
+=======
+guid: 07a05a80361e14e40afed1a3123bc99a
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -8,12 +12,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Griffe_kleinerSchrank
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 514975bb618383f4b839d3ed54e49792, type: 2}
+=======
+    second: {fileID: 2100000, guid: c5e50c8923b97df498c93dc5e10e100f, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Schrank_Holz
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 2da673f19e7c50a449617c18dabc2164, type: 2}
+=======
+    second: {fileID: 2100000, guid: 35adee5ab79207f49b8d45732130fcf4, type: 2}
+>>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0
