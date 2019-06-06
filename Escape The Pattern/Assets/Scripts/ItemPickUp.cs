@@ -10,6 +10,8 @@ public class ItemPickUp : MonoBehaviour
         
     }
 
+    this.getComponent<Meshrenderer>().enabled = false;
+
     // Update is called once per frame
     void Update()
     {
