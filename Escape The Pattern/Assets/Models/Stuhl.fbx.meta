@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: a445a3f220e70f5478a1708a5f4bbb8f
-=======
-guid: 927d55b8337cd4a46aba1ebc7cb7d241
->>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -12,29 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "Sitzfl\xE4che"
-<<<<<<< HEAD
     second: {fileID: 2100000, guid: 83544e33381c06e46b487fe4bd8d5463, type: 2}
-=======
-    second: {fileID: 2100000, guid: 3f5cedadd51b9da40bd331738a054c04, type: 2}
->>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "Stuhl_R\xE4der"
-<<<<<<< HEAD
     second: {fileID: 2100000, guid: 18edac42e3f19914c8951ae7b7277f97, type: 2}
-=======
-    second: {fileID: 2100000, guid: 16a3762ea49e4284e930dbe7ff08ce50, type: 2}
->>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stuhlbein
-<<<<<<< HEAD
     second: {fileID: 2100000, guid: 57e5b4c803d8e5a4780932916c29762f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 166daf49f705f0843bdc7729b080cdfb, type: 2}
->>>>>>> 0b3c13235afbca62dd91501941a1e2a51ebaee76
   materials:
     importMaterials: 1
     materialName: 0
