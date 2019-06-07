@@ -6,7 +6,7 @@ public class ItemCollider : MonoBehaviour
 {
     void OnCollisionEnter()
     {
-        this.GetComponent<MeshRenderer>().enabled = false;
-        this.GetComponent<MeshCollider>().enabled = false;
+        if (this.gameObject.tag != "Knopf" || this.gameObject.tag == "Knopf" && StaticVariables.hatStift)
+            Destroy(this.gameObject);
     }
 }

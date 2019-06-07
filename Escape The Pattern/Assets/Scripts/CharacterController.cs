@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
     public float speed = 10.0f;
+    public GameObject TextBox;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.UnloadScene("Sleeping");
+        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount;
     }
 
     // Update is called once per frame
