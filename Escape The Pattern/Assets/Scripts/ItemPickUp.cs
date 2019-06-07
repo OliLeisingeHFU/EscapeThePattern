@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEnginge.UI;
+using UnityEngine.UI;
 
 public class ItemPickUp : MonoBehaviour
 {
     public GameObject inventoryPanel;
     public GameObject item;
+
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision colision)
+    void OnCollisionEnter()
     {
+        GameObject i;
         i = Instantiate(item);
-        if.transform.SetParent(inventoryPanel.transform);
+        i.transform.SetParent(inventoryPanel.transform);
     }
 
 }

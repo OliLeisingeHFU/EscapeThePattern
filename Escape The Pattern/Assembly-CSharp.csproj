@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CamMouseController.cs" />
      <Compile Include="Assets\Scripts\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\ItemCollider.cs" />
      <Compile Include="Assets\Scripts\ItemPickUp.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Oliver/Documents/GitHub/EscapeThePattern/Escape The Pattern/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
