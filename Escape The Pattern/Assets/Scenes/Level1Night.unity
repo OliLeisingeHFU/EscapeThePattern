@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1331,6 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  TextBox: {fileID: 0}
 --- !u!114 &1191380722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,7 +1349,6 @@ MonoBehaviour:
   Canvas: {fileID: 1835749883}
   WinPanel: {fileID: 7094025668502856523, guid: b7570f7ba03e19243bb6f96eca2bc074,
     type: 3}
-  hatStift: 0
 --- !u!1001 &1238246075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_ChildAlignment: 6
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 345.3, y: 99.15}
+  m_CellSize: {x: 250, y: 60}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -2185,7 +2185,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 345.3, y: 99.15}
+  m_CellSize: {x: 250, y: 60}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
