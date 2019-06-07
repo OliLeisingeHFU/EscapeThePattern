@@ -13,7 +13,7 @@ public class CharacterController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.UnloadScene("Sleeping");
-        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount;
+        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
     }
 
     // Update is called once per frame

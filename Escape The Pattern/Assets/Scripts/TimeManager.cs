@@ -12,7 +12,7 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount;
+        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
        Invoke("timePassed", 1);
         SceneManager.UnloadScene("Level1");
         SceneManager.UnloadScene("Level1Night");
@@ -26,7 +26,7 @@ public class TimeManager : MonoBehaviour
         StaticVariables.tcount = StaticVariables.tcount + 1;
         if (StaticVariables.tcount == 24)
             StaticVariables.tcount = 0;
-        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount;
+        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
 
         Invoke("timePassed", 1);
     }
