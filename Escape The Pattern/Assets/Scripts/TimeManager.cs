@@ -14,8 +14,8 @@ public class TimeManager : MonoBehaviour
     {
         TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
        Invoke("timePassed", 1);
-        SceneManager.UnloadScene("Level1");
-        SceneManager.UnloadScene("Level1Night");
+        SceneManager.UnloadSceneAsync("Level1");
+        SceneManager.UnloadSceneAsync("Level1Night");
 
  
     }
@@ -37,11 +37,11 @@ public class TimeManager : MonoBehaviour
         {
             if(StaticVariables.tcount < 5 || StaticVariables.tcount > 22)
             {
-                SceneManager.LoadScene("Level1Night", LoadSceneMode.Additive);
+                SceneManager.LoadSceneAsync("Level1Night", LoadSceneMode.Additive);
             }else
             {
                 StaticVariables.timesWokenUp += 1;
-                SceneManager.LoadScene("Level1", LoadSceneMode.Additive);
+                SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
             }
         }
     }

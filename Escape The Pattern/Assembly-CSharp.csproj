@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Scripts\ItemCollider.cs" />
      <Compile Include="Assets\Scripts\ItemPickUp.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Monitor.cs" />
      <Compile Include="Assets\Scripts\StaticVariables.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />

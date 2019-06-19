@@ -32,7 +32,7 @@ public class ItemPickUp : MonoBehaviour
 
         if (collision.gameObject.tag == "Bett")
         {
-            SceneManager.LoadScene("Sleeping", LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync("Sleeping", LoadSceneMode.Additive);
         }
     }
 
