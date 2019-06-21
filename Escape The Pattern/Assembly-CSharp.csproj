@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\ItemPickUp.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Monitor.cs" />
+     <Compile Include="Assets\Scripts\Sleepmanager.cs" />
      <Compile Include="Assets\Scripts\StaticVariables.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <None Include="Assets\Fonts\impact\sharefonts.net.txt" />

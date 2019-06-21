@@ -11,9 +11,9 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.UnloadSceneAsync("Sleeping");
-        SceneManager.UnloadSceneAsync("Menu");
         Cursor.lockState = CursorLockMode.Locked;
+
+        SceneManager.UnloadSceneAsync("Sleeping");
 
         TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
     }

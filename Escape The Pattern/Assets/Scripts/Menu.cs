@@ -8,7 +8,9 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     public void crossPressed()
     {
+
         SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Menu");
     }
 
 }
