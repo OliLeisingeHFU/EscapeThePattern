@@ -30,5 +30,13 @@ public class CharacterController : MonoBehaviour
 
         if (Input.GetKeyDown("escape"))
             Cursor.lockState = CursorLockMode.None;
+
+        if(Input.GetMouseButtonDown(0) && StaticVariables.hatBrille)
+        {
+            BrillenActivator.Formen();
+        }else if(Input.GetMouseButtonUp(0) && StaticVariables.hatBrille)
+        {
+            BrillenActivator.Formen();
+        }
     }
 }

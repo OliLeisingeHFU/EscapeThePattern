@@ -8,6 +8,8 @@ TagManager:
   - Knopf
   - Bett
   - fuck
+  - Text
+  - Form
   layers:
   - Default
   - TransparentFX

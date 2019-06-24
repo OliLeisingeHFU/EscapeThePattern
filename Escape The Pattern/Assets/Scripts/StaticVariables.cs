@@ -6,5 +6,6 @@ public class StaticVariables : MonoBehaviour
 {
     public static int tcount = 7;
     public static bool hatStift = false;
+    public static bool hatBrille = true;
     public static int timesWokenUp = 1;
 }
