@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 670224309865224971, guid: c05241f186770c244a38fdc3a2f89420, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Topfformding
+    second: {fileID: 2100000, guid: 267789fc560a5f243bfa5d52fe8657bb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

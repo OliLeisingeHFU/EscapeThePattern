@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BrillenActivator : MonoBehaviour
 {
-    private GameObject[] modelle = GameObject.FindGameObjectsWithTag("Form");
+    private static GameObject[] modelle = GameObject.FindGameObjectsWithTag("Form");
     // Start is called before the first frame update
     public static void Formen()
     {

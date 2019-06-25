@@ -491,7 +491,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 522760264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d1fa742dd4c5f943a995a7cb7f4fcd6, type: 3}
+  m_Script: {fileID: 11500000, guid: bcc7a4a99183b5c459f7198ebbe3b5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TextBox: {fileID: 2103577893}
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 2103577895}
   m_Layer: 5
   m_Name: Oof
-  m_TagString: fuck
+  m_TagString: Zeit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: 8fcc49f68e0364543b7d59f4ec2ee639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StuhlForm
+    second: {fileID: 2100000, guid: c16023b4cb57cb54dbfb04514033e129, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

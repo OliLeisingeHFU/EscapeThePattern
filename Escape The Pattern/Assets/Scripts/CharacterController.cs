@@ -7,15 +7,13 @@ using UnityEngine.UI;
 public class CharacterController : MonoBehaviour
 {
     public float speed = 10.0f;
-    public GameObject TextBox;
+    public static GameObject tip;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-
-        SceneManager.UnloadSceneAsync("Sleeping");
-
-        TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
+        tip = GameObject.FindGameObjectWithTag("fuck");
+        tip.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

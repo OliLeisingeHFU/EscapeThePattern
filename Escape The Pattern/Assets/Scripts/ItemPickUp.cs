@@ -6,36 +6,66 @@ using UnityEngine.SceneManagement;
 
 public class ItemPickUp : MonoBehaviour
 {
-    public GameObject inventoryPanel;
+    public GameObject info;
     public GameObject item;
     public GameObject Canvas;
-    public GameObject WinPanel;
+    public GameObject inventoryPanel;
     
 
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter()
     {
-        if (collision.gameObject.tag == "Stift")
+        CharacterController.tip.gameObject.SetActive(true);
+    }
+
+    void OnTriggerExit()
+    {
+        CharacterController.tip.gameObject.SetActive(false);
+    }
+
+    void OnTriggerStay(Collider collision)
+    {
+
+
+        Debug.Log("berührt " + this.gameObject.tag);
+
+        if (this.gameObject.tag == "Stift" && Input.GetKeyDown(KeyCode.E))
         {
+
             StaticVariables.hatStift = true;
             GameObject i;
             i = Instantiate(item);
             i.transform.SetParent(inventoryPanel.transform);
+            PickingUp(this.gameObject);
         }
 
-        if (collision.gameObject.tag == "Knopf" && StaticVariables.hatStift)
+        if (this.gameObject.tag == "Knopf" && StaticVariables.hatStift && Input.GetKeyDown(KeyCode.E))
         {
-            GameObject i;
-            i = Instantiate(WinPanel);
-            i.transform.SetParent(Canvas.transform);
+            PickingUp(this.gameObject);
+            LevelLoader.LoadNextLevel();
         }
 
-        if (collision.gameObject.tag == "Bett")
+        if (this.gameObject.tag == "Bett" && Input.GetKeyDown(KeyCode.E))
         {
+            CharacterController.tip.gameObject.SetActive(false);
             SceneManager.LoadSceneAsync("Sleeping", LoadSceneMode.Additive);
+        }
+
+        if (this.gameObject.tag == "Brille" && Input.GetKeyDown(KeyCode.E))
+        {
+            StaticVariables.hatBrille = true;
+            PickingUp(this.gameObject);
+            CharacterController.tip.gameObject.SetActive(false);
         }
     }
 
+
+
+    void PickingUp(GameObject obj)
+    {
+        Destroy(obj);
+        return;
+    }
 }
 
 
