@@ -8,7 +8,7 @@ public class TimeManager : MonoBehaviour
 {
     public GameObject TextBox;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
     }

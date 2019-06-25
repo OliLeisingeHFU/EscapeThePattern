@@ -7,10 +7,17 @@ using UnityEngine.UI;
 public class Sleepmanager : MonoBehaviour
 {
     public GameObject TextBox;
+    static public Sleepmanager instance;
+    private static AsyncOperation asyncLoadOperation;
     // Update is called once per frame
     void Start()
     {
         Invoke("timePassed", 1);
+    }
+
+    void Awake()
+    {
+        instance = this;
     }
 
     void timePassed()
@@ -26,18 +33,31 @@ public class Sleepmanager : MonoBehaviour
     void Update()
     {
         TextBox.GetComponent<Text>().text = "" + StaticVariables.tcount + " Uhr";
-
-        if (Input.GetKeyDown(KeyCode.Space) && StaticVariables.sleeping)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (StaticVariables.tcount < 5 || StaticVariables.tcount > 22)
-            {
-                SceneManager.LoadSceneAsync("Level1Night", LoadSceneMode.Additive);
-            }
-            else
-            {
-                StaticVariables.timesWokenUp += 1;
-                SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-            }
+            instance.StartCoroutine(sleepydeepy());
         }
     }
+
+    static IEnumerator sleepydeepy()
+    {
+        Debug.Log("Squeek");
+        if (StaticVariables.tcount < 5 || StaticVariables.tcount > 22)
+        {
+            asyncLoadOperation = SceneManager.LoadSceneAsync("Level1Night", LoadSceneMode.Single);
+            asyncLoadOperation.allowSceneActivation = false;
+
+        }else
+        {
+            StaticVariables.timesWokenUp += 1;
+            asyncLoadOperation = SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Single);
+            asyncLoadOperation.allowSceneActivation = false;
+        }
+
+    yield return new WaitForSeconds(1);
+
+    Debug.Log("Loading next level");
+    asyncLoadOperation.allowSceneActivation = true;
+    }
+                
 }

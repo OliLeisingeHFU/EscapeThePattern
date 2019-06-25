@@ -11,6 +11,9 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetSceneByName("Sleeping").isLoaded)
+            SceneManager.UnloadScene("Sleeping");
+
         Cursor.lockState = CursorLockMode.Locked;
         tip = GameObject.FindGameObjectWithTag("fuck");
         tip.gameObject.SetActive(false);
@@ -37,4 +40,5 @@ public class CharacterController : MonoBehaviour
             BrillenActivator.Formen();
         }
     }
+
 }

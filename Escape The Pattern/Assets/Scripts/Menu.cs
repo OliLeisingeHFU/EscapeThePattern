@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public GameObject Canvas;
+
     // Start is called before the first frame update
     public void crossPressed()
     {
-
-        SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync("Menu");
+        LevelLoader.LoadNextLevel();
+        Canvas.gameObject.SetActive(false);
     }
 
 }

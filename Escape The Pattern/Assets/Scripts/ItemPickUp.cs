@@ -8,6 +8,10 @@ public class ItemPickUp : MonoBehaviour
 {
     public GameObject info;
     public GameObject item;
+    public GameObject topf;
+    public GameObject topfModel;
+    public GameObject stuhl;
+    public GameObject stuhlModel;
     public GameObject Canvas;
     public GameObject inventoryPanel;
     
@@ -25,9 +29,6 @@ public class ItemPickUp : MonoBehaviour
 
     void OnTriggerStay(Collider collision)
     {
-
-
-        Debug.Log("berührt " + this.gameObject.tag);
 
         if (this.gameObject.tag == "Stift" && Input.GetKeyDown(KeyCode.E))
         {
@@ -47,8 +48,10 @@ public class ItemPickUp : MonoBehaviour
 
         if (this.gameObject.tag == "Bett" && Input.GetKeyDown(KeyCode.E))
         {
+            PickingUp(this.gameObject);
             CharacterController.tip.gameObject.SetActive(false);
-            SceneManager.LoadSceneAsync("Sleeping", LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync("Sleeping", LoadSceneMode.Single);
+
         }
 
         if (this.gameObject.tag == "Brille" && Input.GetKeyDown(KeyCode.E))
@@ -57,9 +60,42 @@ public class ItemPickUp : MonoBehaviour
             PickingUp(this.gameObject);
             CharacterController.tip.gameObject.SetActive(false);
         }
+
+        if (this.gameObject.name == "TopfForm" && Input.GetKeyDown(KeyCode.E) && !StaticVariables.hatStuhl)
+        {
+            StaticVariables.hatTopf = true;
+            GameObject i;
+            i = Instantiate(topf);
+            i.transform.SetParent(inventoryPanel.transform);
+            this.GetComponent<MeshRenderer>().enabled = false;
+        }
+        if (this.gameObject.name == "StuhlForm" && Input.GetKeyDown(KeyCode.E) && !StaticVariables.hatTopf)
+        {
+            StaticVariables.hatStuhl = true;
+            GameObject i;
+            i = Instantiate(stuhl);
+            i.transform.SetParent(inventoryPanel.transform);
+            this.GetComponent<MeshRenderer>().enabled = false;
+        }
+
+        if (this.gameObject.name == "Holo" && Input.GetKeyDown(KeyCode.E) && StaticVariables.hatStuhl)
+        {
+            StaticVariables.hatStuhl = false;
+            GameObject i;
+            i = Instantiate(stuhlModel);
+            i.transform.SetParent(this.transform);
+            this.GetComponent<MeshRenderer>().enabled = false;
+        }
+        if (this.gameObject.name == "Holo2" && Input.GetKeyDown(KeyCode.E) && StaticVariables.hatTopf)
+        {
+            StaticVariables.hatTopf = false;
+            GameObject i;
+            i = Instantiate(topfModel);
+            i.transform.SetParent(this.transform);
+            this.GetComponent<MeshRenderer>().enabled = false;
+
+        }
     }
-
-
 
     void PickingUp(GameObject obj)
     {

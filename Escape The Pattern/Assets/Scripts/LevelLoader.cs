@@ -5,11 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    private static int i = -1;
-    private static string[] level = { "Tutorial", "Level1", "Level2", "End"};
+
+    public static AudioSource levelsucceed;
+    public AudioSource sound;
+    static public LevelLoader instance;
+
+    void Awake()
+    {
+        instance = this;
+        levelsucceed = sound;
+    }
+
     public static void LoadNextLevel()
-    {     
-        i++;
-        SceneManager.LoadSceneAsync(level[i], LoadSceneMode.Additive);
+    {
+        Level1script.Resetti();
+        StaticVariables.i++;
+        levelsucceed.Play();
+        instance.StartCoroutine(LoadSceneAsyncAndWaitForAudio());
+    }
+
+    static IEnumerator LoadSceneAsyncAndWaitForAudio()
+    {
+        AsyncOperation asyncLoadOperation = SceneManager.LoadSceneAsync(StaticVariables.level[StaticVariables.i], LoadSceneMode.Single);
+        asyncLoadOperation.allowSceneActivation = false;
+
+        yield return new WaitForSeconds(3);
+
+        Debug.Log("Loading next level");
+        asyncLoadOperation.allowSceneActivation = true;
     }
 }
